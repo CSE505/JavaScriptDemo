@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>get elements demo</title>
+</head>
+
+<body>
+
+    <p>This is a demo for getElementById</p>
+    <h1 id="101">GetElementByID</h1>
+
+    <p>This is a demo for getElementsByClassName</p>
+    <div class="demo">Java</div>
+    <div class="demo">Script</div>
+
+    <p>This is a demo for getElementsByTagName</p>
+    <p>Dish List</p>
+    <ul>
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Fries</li>
+        <li>Coke</li>
+        <li>Pepsi</li>
+    </ul>
+
+    <p id="102"></p>
+
+    <script type="text/javascript">
+        document.getElementById(101).style.color="blue";
+        const item = document.getElementsByClassName("demo");
+        item[0].innerHTML = "JavaScript Class Name Access";
+
+        const listItems = document.getElementsByTagName("li");
+        document.getElementById("102").innerHTML = listItems[1].innerHTML;
+    </script>
+
+</body>
+
+</html>
